@@ -10,7 +10,7 @@ export default function QuestionTimer({timeout, onTimeout}) {
     return () =>{
         clearInterval(timer)
     }    
-},[timeout, onTimeout])
+    },[timeout, onTimeout])
     
     
 
@@ -23,11 +23,6 @@ export default function QuestionTimer({timeout, onTimeout}) {
             clearInterval(interval)
         }
     },[])
-
-    
-
-
-    
 
     return <progress id="question-time" max={timeout} value={remainingTime}   />
 } 
